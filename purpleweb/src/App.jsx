@@ -1,0 +1,91 @@
+import { io } from "socket.io-client";
+const socket = io("http://localhost:3000");
+import axios from 'axios'
+import { useState, useEffect } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import React from "react";
+
+function App() {
+  const delay = ms => new Promise(res => setTimeout(res, ms))
+  const [gamingCloud, setGamingCloud] = useState('google')
+  const [queueTotal, setQueueTotal] = useState('0')
+  const [ip, setIP] = useState('');
+  const [vmUser, setVMUser] = useState({});
+  const [vmUserToggle, setVMUserToggle] = useState(false);
+
+  const getData = async () => {
+    const res = await axios.get('https://geolocation-db.com/json/')
+    setIP(res.data.IPv4)
+  }
+
+  useEffect(() => {
+    getData()
+  }, [])
+
+  
+  useEffect(() => {
+    socket.on('vmCreator', async (data) => {
+      setVMUser(data)
+      await delay(1000)
+      setVMUserToggle(true)
+    })
+  }, [])
+  
+  const CreatingVM = (data) => {
+    socket.emit('vmEnterQueue', {data, ip: '::1'})
+  }
+  
+  socket.on('vmQueue', async (data) => {
+    setQueueTotal(data.queueLength)
+  })
+
+  function CreatorShowInfos() {
+    if (vmUserToggle) {
+      return (
+        <React.Fragment>
+          <p className="read-the-docs">{vmUser.connection.ip}</p>
+          <p className="read-the-docs">{vmUser.connection.port}</p>
+          <p className="read-the-docs">{vmUser.connection.password}</p>
+        </React.Fragment>
+      )
+    }
+  }
+
+  return (
+    <div className="App">
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src="/vite.svg" className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://reactjs.org" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => { CreatingVM({
+            vmName: 'PurpleCloud',
+            vmType: 't2.micro',
+            vmRegion: 'us-east-1',
+            userEmail: 'kauanaraujo.dev@gmail.com',
+            userUsername: 'PurpleDev',
+            gamingCloud: gamingCloud,
+            selectedGame: 'minecraft'
+          }) }}>
+          Create VM
+        </button>
+        <button onClick={() => { setGamingCloud('azure') }}>
+          SetGamingCloud
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <CreatorShowInfos />
+      <p className="read-the-docs">Queue: {queueTotal}</p>
+    </div>
+  )
+}
+
+export default App
