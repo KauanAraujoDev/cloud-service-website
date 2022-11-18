@@ -1,0 +1,26 @@
+@media screen and (min-width: 360px) {
+    :root {
+        font-size: .182rem;
+    }
+}
+@media screen and (min-width: 375px) {
+    :root {
+        font-size: .188rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    :root {
+        font-size: .395rem;
+    }
+}
+@media screen and (min-width: 1366px) {
+    :root {
+        font-size: .72rem;
+    }
+}
+@media screen and (min-width: 1920px) {
+    :root {
+        font-size: 1rem;
+    }
+}
+

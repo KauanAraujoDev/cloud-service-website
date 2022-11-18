@@ -10,7 +10,7 @@ const loader = async (socket, socketIp, googleListVM, azureListVM) => {
                 userIp: vm.userIp,
                 connection: {
                     ip: vm.connection.ip,
-                    port: vm.connection.port,
+                    user: vm.connection.user,
                     password: vm.connection.password
                 }
             });
@@ -26,7 +26,7 @@ const loader = async (socket, socketIp, googleListVM, azureListVM) => {
                 userIp: vm.userIp,
                 connection: {
                     ip: vm.connection.ip,
-                    port: vm.connection.port,
+                    user: vm.connection.user,
                     password: vm.connection.password
                 }
             });

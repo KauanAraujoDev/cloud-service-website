@@ -9,8 +9,6 @@ const loader = async(socket, userIp, userValues, userKey, googleListVM, usersOnQ
             vm.userEmail = userValues.userEmail;
             vm.userUsername = userValues.userUsername;
             vm.userIp = userIp;
-
-            console.log('VM created');
             
             socket.emit('vmCreator', {
                 status: vm.status, 
@@ -19,7 +17,7 @@ const loader = async(socket, userIp, userValues, userKey, googleListVM, usersOnQ
                 userIp: userIp,
                 connection: {
                     ip: vm.connection.ip,
-                    port: vm.connection.port,
+                    user: vm.connection.user,
                     password: vm.connection.password
                 }
             });

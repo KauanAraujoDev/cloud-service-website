@@ -1,0 +1,73 @@
+.topgames {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 71.375rem;
+    background: #090620;
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.text h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    text-align: center;
+    color: #ECECEC;
+}
+
+.text h3 {
+    position: relative;
+    bottom: 2.5rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    text-align: center;
+    color: #BCBCBC;
+}
+
+.gameslist {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 25.5rem);
+    position: relative;
+    bottom: 3.5rem;
+    width: 100rem;
+    height: 46.5rem;
+}
+
+.gameslist .game {
+    position: relative;
+    bottom: 5rem;
+    margin-top: 2rem;
+    width: 22.75rem;
+    height: 22.75rem;
+    border-radius: 1rem;
+}
+
+.plataforms {
+    display: grid;
+    grid-template-columns: repeat(8, 1rem);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    right: 1.85rem;
+    position: relative;
+    bottom: 2rem;
+    width: 53rem;
+    height: 4rem;
+}
+
+.plataforms .svg {
+    width: 4rem;
+    height: 4rem;
+    fill: #B1B1B1;
+}

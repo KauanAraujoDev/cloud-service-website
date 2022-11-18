@@ -28,8 +28,8 @@ let googleListVM = [
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
-            password: 'pass1'
+            user: 'BrightNePae',
+            password: 'SENHADIFICILPACARALHO'
         }
     },
     {
@@ -40,7 +40,7 @@ let googleListVM = [
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
+            user: 'BrightNePae',
             password: 'pass2'
         }
     },
@@ -52,7 +52,7 @@ let googleListVM = [
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
+            user: 'BrightNePae',
             password: 'pass3'
         }
     },
@@ -61,15 +61,15 @@ let googleListVM = [
 let azureListVM = [
     {
         name: 'VM 1',
-        status: 'unavailable',
+        status: 'available',
         statusCreating: 'Criando Disco',
         userEmail: '',
         userUsername: '',
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
-            password: 'pass1'
+            user: '3312',
+            password: 'passazure'
         }
     },
     {
@@ -80,7 +80,7 @@ let azureListVM = [
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
+            user: '3312',
             password: 'pass2'
         }
     },
@@ -92,7 +92,7 @@ let azureListVM = [
         userIp: '',
         connection: {
             ip: '127.0.0.1',
-            port: '3312',
+            user: '3312',
             password: 'pass3'
         }
     },

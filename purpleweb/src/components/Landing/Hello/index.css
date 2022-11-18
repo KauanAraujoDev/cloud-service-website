@@ -1,0 +1,79 @@
+.hello {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0rem;
+    height: 57.5rem;
+    background: hsl(248, 52%, 8%);
+}
+
+.insideText h4 {
+    position: relative;
+    bottom: 4rem;
+    padding: 0 5rem;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 9.25rem;
+    text-align: center;
+
+    color: #ECECEC;
+}
+
+.insideText h6 {
+    position: relative;
+    bottom: 12rem;
+
+    padding: 0 5rem;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    text-align: center;
+
+    color: #ECECEC;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 93.75rem;
+    height: 14rem;
+    top: 40.625rem;
+    transition: 0.5s;
+}
+
+.buttons .button {  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    margin-right: 13.125rem;
+    left: 8rem;
+    width: 31.25rem;
+    height: 8rem;
+    border-radius: 1rem;
+    background: #0D0A20;
+    transition: 0.5s;
+    color: #B1B1B1;
+}
+
+.buttons .button h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.625rem;
+    text-align: center;
+}
+
+.buttons .button:hover {
+    color: #ECECEC;
+    background: radial-gradient(100% 1543.81% at 0% 0%, rgba(102, 7, 190, 0.5) 0%, rgba(102, 7, 190, 0) 100%), radial-gradient(151.57% 2301.79% at 100% 100%, rgba(247, 9, 173, 0.35) 0%, rgba(0, 0, 0, 0) 100%), #120828;
+}  
