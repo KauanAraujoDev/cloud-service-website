@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    height: 51.125rem;
+    height: 44.5rem;
     background: #090620;
 }
 
@@ -16,3 +16,56 @@
     text-align: center;
     color: #ECECEC;
 }
+
+.howworks .steps {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(3, 25.5rem);
+    position: relative;
+    padding: 1rem 10rem;
+}
+
+.howworks .steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+}
+
+.howworks .steps .step {
+    margin: 1rem;
+}
+
+.howworks .steps .step svg {
+    position: relative;
+    width: 5.75rem;
+    height: 5.75rem;
+}
+
+.howworks .steps .step h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4375rem;
+    text-align: center;
+
+    color: #ECECEC;
+}
+
+.howworks .steps .step h3 {
+    position: relative;
+    top: 0rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #B1B1B1;
+}
+
+

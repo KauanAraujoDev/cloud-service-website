@@ -27,6 +27,10 @@ header {
     color: #ECECEC;
 }
 
+.brightname:hover {
+    cursor: pointer;
+}
+
 .brightlist {
     display: flex;
     align-items: center;
@@ -48,6 +52,7 @@ header {
 
 .brightlist h3:hover {
     color: #ECECEC;
+    cursor: pointer;
 }
 
 .brightlogin {
@@ -82,4 +87,5 @@ header {
 .brightlogin:hover {
     background: #17104B;
     color: #ECECEC;
+    cursor: pointer;
 }
