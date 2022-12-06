@@ -1,8 +1,8 @@
 footer {
     display: flex;
     position: relative;
-    bottom: 0rem;
-    height: 12.25rem;
+    bottom: 10rem;
+    height: 2.5rem;
     background: #140E27;
 }
 
@@ -19,7 +19,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     position: relative;
     left: 10.5rem;
-    top: 1.5rem;
+    top: 4rem;
 }
 
 .listRules .rules {

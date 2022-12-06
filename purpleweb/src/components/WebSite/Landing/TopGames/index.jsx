@@ -1,10 +1,10 @@
 import React from "react";
 import './index.css';
 
-import warzone from '../../../assets/warzoneback.png';
-import fortnite from '../../../assets/fortnite.png';
+import warzone from '../../../../assets/warzoneback.png';
+import fortnite from '../../../../assets/fortnite.png';
 
-import {ReactComponent as SteamSVG} from '../../../assets/steam.svg';
+import {ReactComponent as SteamSVG} from '../../../../assets/steam.svg';
 
 export default function TopGames() {
   

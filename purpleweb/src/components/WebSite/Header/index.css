@@ -36,6 +36,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
+    top: .5rem;
     left: 26rem;
 }
 
@@ -62,15 +63,15 @@ header {
     text-align: center;
 
     position: relative;
-    top: 1.5rem;
+    top: 2rem;
     left: 44rem;
 
-    width: 12.0625rem;
-    height: 4.5625rem;
+    padding: 0rem 1.5rem;
+    height: 4.5rem;
 
     border-radius: .5rem;
 
-    background: #140E27;
+    background: #0a071f;
     color: #B1B1B1;
 
     transition: .5s;
@@ -85,7 +86,7 @@ header {
 }
 
 .brightlogin:hover {
-    background: #17104B;
+    background: #140f33;
     color: #ECECEC;
     cursor: pointer;
 }

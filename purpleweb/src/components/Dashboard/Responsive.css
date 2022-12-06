@@ -1,21 +1,21 @@
 @media screen and (min-width: 360px) {
     :root {
-        font-size: .182rem;
+        font-size: .18rem;
     }
 }
 @media screen and (min-width: 375px) {
     :root {
-        font-size: .188rem;
+        font-size: .195rem;
     }
 }
 @media screen and (min-width: 768px) {
     :root {
-        font-size: .395rem;
+        font-size: .405rem;
     }
 }
 @media screen and (min-width: 1366px) {
     :root {
-        font-size: .71rem;
+        font-size: .724rem;
     }
 }
 @media screen and (min-width: 1920px) {

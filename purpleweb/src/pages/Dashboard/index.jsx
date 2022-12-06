@@ -2,16 +2,11 @@ import React, { useState, useEffect } from "react";
 
 import { Loader } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
-import '../../components/Responsive.css';
-
-import Header from "../../components/WebSite/Header";
-import Footer from "../../components/WebSite/Footer";
-
-import Hello from "../../components/WebSite/Landing/Hello";
-import TopGames from "../../components/WebSite/Landing/TopGames";
-import HowWorks from "../../components/WebSite/Landing/HowWorks";
+import '../../components/Dashboard/Responsive.css';
 
 import { motion } from "framer-motion"
+
+import Dashboard from "../../components/Dashboard";
 
 export default function Landing() {
   const [loading, setLoading] = useState(true);
@@ -46,18 +41,14 @@ export default function Landing() {
     } else {
       return (
         <React.Fragment>
-        <Header />
           <motion.div
             className="landing"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <Hello />
-            <TopGames />
-            <HowWorks />
+            <Dashboard />
           </motion.div>
-        <Footer />
         </React.Fragment>
       )
     }

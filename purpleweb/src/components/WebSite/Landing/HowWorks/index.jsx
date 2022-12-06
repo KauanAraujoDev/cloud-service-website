@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css';
 
-import {ReactComponent as Shutdown} from '../../../assets/Shutdown.svg';
+import {ReactComponent as Shutdown} from '../../../../assets/Shutdown.svg';
 
 export default function HowWorks() {
 

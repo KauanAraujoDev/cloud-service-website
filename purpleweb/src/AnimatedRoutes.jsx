@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Landing from "./pages/Landing";
+import Dashboard from "./pages/Dashboard";
 
 function AnimatedRoutes () {
     const location = useLocation();
@@ -10,7 +11,7 @@ function AnimatedRoutes () {
         <AnimatePresence>
             <Routes location={location} key={location.pathname}>
                 <Route path="/" element={ <Landing /> }></Route>
-                <Route path="/dashboard" element={ <Landing /> }></Route>
+                <Route path="/dashboard" element={ <Dashboard /> }></Route>
             </Routes>
         </AnimatePresence>
     )

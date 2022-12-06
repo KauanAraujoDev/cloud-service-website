@@ -1,8 +1,8 @@
 import React from "react";
 import './index.css';
-import '../Global.css';
+import '../../Global.css';
 
-import brightLogo from '../../assets/logoname.png';
+import brightLogo from '../../../assets/logoname.png';
 
 export default function Footer() {
   return (

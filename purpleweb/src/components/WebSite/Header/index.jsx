@@ -1,20 +1,18 @@
 import React from "react";
 import './index.css';
-import '../Global.css';
+import '../../Global.css';
 
 import { Link } from "react-router-dom";
 
-import { motion } from "framer-motion";
-
-import brightLogo from '../../assets/logo.png';
+import brightLogo from '../../../assets/logo.png';
 
 export default function Header() {
   return (
     <React.Fragment>
         <header>
             <div>
-                <img className="brightlogo" src={brightLogo} alt="Bright Logo" />
                 <Link to="/" style={{ textDecoration: "none"}}>
+                    <img className="brightlogo" src={brightLogo} alt="Bright Logo" />
                     <h1 className="brightname">BrightCloud</h1>
                 </Link>
             </div>
@@ -31,7 +29,7 @@ export default function Header() {
             </div>
             <Link to="/dashboard" style={{ textDecoration: "none"}}>
                 <div className="brightlogin">
-                    <h3>LOGIN</h3>
+                    <h3>DASHBOARD</h3>
                 </div>
             </Link>
         </header>

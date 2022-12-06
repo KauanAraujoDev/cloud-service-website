@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    position: relative;
+    bottom: 7.6rem;
+    height: 35.25rem;
+}
+
+main .texts {
+    position: relative;
+    left: 4.5rem;
+    top: 10rem;
+}
+
+main .texts h1 {
+    padding: 0rem 1rem;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.875rem;
+    color: #ECECEC;    
+    margin-bottom: 2rem;
+}
+
+main .texts p {
+    width: 75rem;
+    padding: 0rem 1rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: #B1B1B1;
+}
+
+main .selectsButtons {
+    display: flex;
+    position: relative;
+    right: 69.5rem;
+    top: 28rem;
+    width: 32.75rem;
+    height: 4rem;
+}
+
+main .selectsButtons .button {
+    position: relative;
+    height: 4rem;
+    padding: 0 2.5rem;
+    margin-right: 1rem;
+    background: rgba(11, 8, 24, 0.5);
+    color: #B1B1B1;
+    border-radius: .5rem;
+    transition: 0.5s;
+}
+
+main .selectsButtons .button:hover {
+    background: #0B0818;
+    color: #ECECEC;
+}
+
+main .selectsButtons .button h1 {
+    position: relative;
+    top: 1.2rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+

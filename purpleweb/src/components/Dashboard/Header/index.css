@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background: none;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav .brightlogo {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+}
+
+.nav h2 {
+    position: relative;
+    left: 6.7rem;
+    top: .85rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+
+    color: #ECECEC;
+}
+
+.user {
+    display: flex;
+    position: relative;
+    left: 78rem;
+    top: .85rem;
+}
+
+.user .elipse {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    top: .85rem;
+    border-radius: 50rem;
+}
+
+.user h3 {
+    position: relative;
+    top: .5rem;
+    left: 1.8rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    color: #ECECEC;
+}
+
+.logout {
+    position: relative;
+    top: 1.80rem;
+    left: 83rem;
+    width: 4rem;
+    height: 4rem;
+    fill: #adadad;
+    transition: 0.5s;
+}
+
+.logout:hover {
+    cursor: pointer;
+    fill: #ECECEC;
+}
